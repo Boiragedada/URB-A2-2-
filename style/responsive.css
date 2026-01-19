@@ -1,0 +1,80 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #1A0B2E;
+}
+.logo{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+}
+.nav-links li{
+    margin-left: 25px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.nav-btn{
+    background: linear-gradient(to right, rgb(245, 245, 62), rgb(241, 145, 161), rgb(197, 9, 197));
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-left: 350px;
+
+}
+.nav-btn:hover{
+    background: linear-gradient(to right, red, yellow, aqua);
+
+}
+.hamburger-icon{
+    display: none;
+}
+ .menu-che{
+        display: none;
+    }
+    #wave{
+        color: rgb(229, 108, 128);
+    }
+
+
+@media screen and (max-width: 576px){
+    .hamburger-icon{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        top: 70px;
+        right: -100%;
+        flex-direction: column;
+        background-color: #333;
+        width: 250px;
+        height: 100vh;
+        padding-top: 50px;
+        transition: 0.4s;
+
+
+    }
+    .menu-che:checked ~ .nav-links{
+        right: 0;
+    }
+    .nav-links li{
+        margin: 15px 0;
+
+    }
+    .menu-che{
+        display: none;
+    }
+
+
+
+}
