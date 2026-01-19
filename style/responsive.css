@@ -197,9 +197,61 @@
 .choose{
     width: 100%;
     height: 1100px;
-    border: 2px solid aqua;
+    /* border: 2px solid aqua; */
+    /* align-items: center;
+    justify-content: center; */
+    background-color: #1d0c34;
+    margin-top: -41px;
+}
+.choose .container{
+    width: 80%;
+    height: 780px;
+    /* border: 2px solid aqua; */
+    margin: 50px auto;
+}
+.choose .h2r{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: white;
+    padding-left: 350px;
+    padding-top: 50px;
+}
+.choose .container .box>*{
+    /* border: 1px solid gold; */
+    /* height: 220px; */
+    border-radius: 8px;
+    background-color: #462a6c;
+    padding: 10px;
 }
 
+
+/* .bg-color{
+    background-color: #48217c;
+} */
+.music{
+    grid-area: music;
+}
+.mobile{
+    grid-area: mobile;
+
+}
+.global{
+    grid-area: global;
+}
+.book{
+    grid-area: book;
+}
+.exclusive{
+    grid-area: exclusive;
+}
+.choose .container .box{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "music mobile mobile"
+    "music global global"
+    "exclusive exclusive book";
+}
 
 
 
@@ -256,6 +308,44 @@
 .about .card-box ul{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.choose{
+    height: 1360px;
+}
+.choose .h2r {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+    padding-left: 41px;
+    padding-top: 50px;
+}
+
+.music{
+    grid-area: music;
+}
+.mobile{
+    grid-area: mobile;
+
+}
+.global{
+    grid-area: global;
+}
+.book{
+    grid-area: book;
+}
+.exclusive{
+    grid-area: exclusive;
+}
+.choose .container .box{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "music"
+    "mobile"
+    "global"
+    "exclusive"
+    "book";
 }
 
 
