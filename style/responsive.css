@@ -267,8 +267,8 @@
 }
 .yt-video .video-container{
     width: 75%;
-    height: 538px;
-    border: 2px solid yellow;
+    height: 600px;
+    /* border: 2px solid yellow; */
     position: absolute;
     margin-top: 100px;
     margin-left: 150px;
@@ -277,9 +277,33 @@
 
 .yt-video .video-container .card-box{
     width: 100%;
-    height: 420px;
-    border: 2px solid yellow;
+    height: 520px;
+    /* border: 2px solid yellow; */
+    color: white;   
 }
+.yt-video .video-container .card-box ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    /* border-radius: 7px; */
+}
+.yt-video .video-container .card-box ul li{
+   height: 450px;
+   width: 30%;
+   /* border: 1px solid yellow; */
+   border-radius: 5px;
+   background-color: #2a1941;
+   padding: 7px;
+   
+}
+.yt-video .video-container .card-box ul li h6{
+    color: rgb(108, 181, 108);
+}
+.yt-video .video-container .card-box ul li p{
+    color: #c6c2c2;
+    font-size: 16px;
+}
+
 .yt-video .host-container{
     width: 75%;
     height: 378px;
@@ -295,6 +319,7 @@
     /* border: 2px solid yellow; */
     background-color: #201135;
     border-radius: 20px;
+    /* color: white; */
 }
 .yt-video .host-container .h-card-box img{
     margin-top: 20px;
@@ -349,7 +374,7 @@
     margin-left: 400px;
 }
 .footer .footer-box .ul-box{
-    width: 50%;
+    width: 60%;
     height: 25px;
     /* border: 1px solid yellow; */
     margin-left: 300px;
@@ -358,7 +383,9 @@
 .footer .footer-box .ul-box ul{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    list-style: none;
 }
+
 
 
 
